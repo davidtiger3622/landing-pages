@@ -58,7 +58,7 @@ export default function Home() {
 
         {/* Footer */}
         <div className="mt-20 text-center text-slate-500 text-sm">
-          Built with React, Vite &amp; Tailwind CSS
+        © 2026 Landing Pages
         </div>
       </div>
     </div>

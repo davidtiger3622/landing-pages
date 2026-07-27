@@ -174,7 +174,7 @@ export default function SaasLanding() {
       {/* Footer */}
       <footer className="border-t border-gray-100 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-400">
-          © 2026 Pulse Analytics. Built as a portfolio demo.
+          © 2026 Pulse Analytics.
         </div>
       </footer>
     </div>
