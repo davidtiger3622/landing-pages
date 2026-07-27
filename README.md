@@ -1,16 +1,89 @@
-# React + Vite
+# Landing Pages
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A gallery of six distinct landing page styles — different industries, different design languages, all built from scratch in a single React codebase.
 
-Currently, two official plugins are available:
+**🔗 Live demo:** [landing-pages-six-murex.vercel.app](https://landing-pages-six-murex.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Landing Pages gallery screenshot](./docs/home-preview.png)
 
-## React Compiler
+## What's inside
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Page | Style | Route |
+|---|---|---|
+| SaaS Landing | Hero, features, pricing tiers, CTA | `/saas` |
+| Business / Service | Restaurant/steakhouse — menu, testimonials, hours | `/business` |
+| Creator / Personal | Link-in-bio, pastel gradient | `/creator` |
+| Event / Webinar | Live countdown timer, signup form | `/event` |
+| Agency | Bold portfolio, services, client showcase | `/agency` |
 
-## Expanding the ESLint configuration
+The home page (`/`) is a gallery that links to all five, with a live-rendered iframe preview of each.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- **React 18** + **Vite**
+- **Tailwind CSS v4**
+- **React Router** for client-side routing
+- **Vitest** + **React Testing Library** for smoke tests
+- **GitHub Actions** for CI (lint, test, build on every push)
+- **Vercel** for deployment
+
+## Running locally
+
+```bash
+git clone https://github.com/davidtiger3622/landing-pages.git
+cd landing-pages
+npm install
+npm run dev
+```
+
+Visit `http://localhost:5173`.
+
+## Testing
+
+```bash
+npm run test
+```
+
+12 smoke tests covering all six pages — confirms each renders without crashing and shows its key content.
+
+## Linting
+
+```bash
+npm run lint
+```
+
+## Building for production
+
+```bash
+npm run build
+```
+
+## CI/CD
+
+Every push to `main` runs lint, tests, and a production build via GitHub Actions. Deployment to Vercel happens automatically on push.
+
+## Project structure
+
+```
+landing-pages/
+├── src/
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── SaasLanding.jsx
+│   │   ├── BusinessLanding.jsx
+│   │   ├── CreatorLanding.jsx
+│   │   ├── EventLanding.jsx
+│   │   ├── AgencyLanding.jsx
+│   │   ├── NotFound.jsx
+│   │   └── __tests__/
+│   ├── components/
+│   │   └── LandingCard.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── .github/workflows/ci.yml
+└── vercel.json
+```
+
+## License
+
+MIT © 2026 David Wanjala Wafula
