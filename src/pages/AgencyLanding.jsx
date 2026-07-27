@@ -42,7 +42,7 @@ export default function AgencyLanding() {
         <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.95]">
           We build brands<br />people <span className="text-amber-400">actually</span> remember.
         </h1>
-        <p className="mt-8 text-lg text-white/60 max-w-xl">
+        <p className="mt-8 text-lg text-white/75 max-w-xl">
           Studio/9 partners with ambitious companies to design identities,
           products, and campaigns that don't blend in.
         </p>
@@ -83,8 +83,8 @@ export default function AgencyLanding() {
               <div key={s.number} className="flex gap-6 border-b border-white/10 pb-8">
                 <span className="text-amber-400 font-black text-2xl">{s.number}</span>
                 <div>
-                  <h3 className="font-bold text-xl">{s.title}</h3>
-                  <p className="text-white/50 mt-2">{s.desc}</p>
+                <h3 className="font-bold text-xl">{s.title}</h3>
+                <p className="text-white/70 mt-2">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -95,13 +95,13 @@ export default function AgencyLanding() {
       {/* Final CTA */}
       <section className="max-w-4xl mx-auto px-6 py-24 text-center">
         <h2 className="text-4xl md:text-5xl font-black">Got a brand worth building?</h2>
-        <p className="mt-4 text-white/60">Let's make something people can't ignore.</p>
+        <p className="mt-4 text-white/75">Let's make something people can't ignore.</p>
         <button className="mt-8 bg-amber-400 text-black px-8 py-3.5 rounded-full font-bold hover:bg-amber-300 transition">
           Start a Project
         </button>
       </section>
 
-      <footer className="border-t border-white/10 py-8 text-center text-sm text-white/40">
+      <footer className="border-t border-white/10 py-8 text-center text-sm text-white/70">
         © 2026 Studio/9.
       </footer>
     </div>

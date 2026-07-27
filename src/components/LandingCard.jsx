@@ -7,7 +7,7 @@ export default function LandingCard({ title, description, path, gradient }) {
       className="group relative block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
     >
       {/* Live preview */}
-      <div className="relative h-56 overflow-hidden bg-gray-900 pointer-events-none">
+      <div className="relative h-56 overflow-hidden bg-gray-900 pointer-events-none" aria-hidden="true">
         <iframe
           src={path}
           title={title}
@@ -27,7 +27,7 @@ export default function LandingCard({ title, description, path, gradient }) {
 
       {/* Always-visible label (bottom bar, visible before hover) */}
       <div className="bg-white px-5 py-4 group-hover:opacity-0 transition-opacity duration-200">
-        <h3 className="font-bold text-gray-900">{title}</h3>
+        <h2 className="font-bold text-gray-900">{title}</h2>
         <p className="text-sm text-gray-500 mt-0.5">{description}</p>
       </div>
     </Link>

@@ -39,13 +39,16 @@ export default function CreatorLanding() {
         {/* Socials row */}
         <div className="flex items-center justify-center gap-4 mb-8">
           {socials.map((s) => (
-            <div
+            
+            <a
               key={s.label}
+              href="#"
+              aria-label={s.label}
               title={s.label}
-              className="w-11 h-11 rounded-full bg-white/70 backdrop-blur flex items-center justify-center text-lg shadow-sm hover:scale-110 hover:bg-white transition-transform cursor-pointer"
+              className="w-11 h-11 rounded-full bg-white/70 backdrop-blur flex items-center justify-center text-lg shadow-sm hover:scale-110 hover:bg-white transition-transform"
             >
               {s.icon}
-            </div>
+            </a>
           ))}
         </div>
 
@@ -70,7 +73,7 @@ export default function CreatorLanding() {
         </div>
 
         <p className="text-center text-xs text-gray-500 mt-10">
-        © 2026 @juliahearts
+          © 2026 @juliahearts
         </p>
       </div>
     </div>
