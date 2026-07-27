@@ -83,12 +83,18 @@ export default function EventLanding() {
           <h2 className="text-xl font-bold text-center mb-1">Save your free seat</h2>
           <p className="text-slate-400 text-sm text-center mb-6">Limited to 5,000 attendees</p>
           <div className="space-y-3">
+            <label htmlFor="event-name" className="sr-only">Full name</label>
             <input
+              id="event-name"
+              name="name"
               type="text"
               placeholder="Full name"
               className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:border-emerald-400"
             />
+            <label htmlFor="event-email" className="sr-only">Work email</label>
             <input
+              id="event-email"
+              name="email"
               type="email"
               placeholder="Work email"
               className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:border-emerald-400"

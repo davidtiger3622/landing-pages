@@ -36,7 +36,7 @@ const pages = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <main className="max-w-6xl mx-auto px-6 py-20">
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="mt-20 text-center text-slate-500 text-sm">
         © 2026 Landing Pages
         </div>
-      </div>
+      </main>
     </div>
   )
 }

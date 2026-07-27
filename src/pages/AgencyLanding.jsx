@@ -34,6 +34,7 @@ export default function AgencyLanding() {
         </div>
       </nav>
 
+      <main>
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 pt-24 pb-20">
         <p className="text-amber-400 font-semibold tracking-[0.3em] text-xs uppercase mb-6">
@@ -100,6 +101,7 @@ export default function AgencyLanding() {
           Start a Project
         </button>
       </section>
+      </main>
 
       <footer className="border-t border-white/10 py-8 text-center text-sm text-white/70">
         © 2026 Studio/9.

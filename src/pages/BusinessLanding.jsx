@@ -38,6 +38,7 @@ export default function BusinessLanding() {
         </div>
       </nav>
 
+      <main>
       {/* Hero */}
       <section className="relative max-w-6xl mx-auto px-6 pt-24 pb-20 text-center">
         <p className="text-red-500 font-semibold tracking-[0.3em] text-sm uppercase mb-4">
@@ -133,6 +134,7 @@ export default function BusinessLanding() {
           Reserve a Table
         </button>
       </section>
+      </main>
 
       <footer className="border-t border-white/10 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">

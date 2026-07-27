@@ -72,6 +72,7 @@ export default function SaasLanding() {
         </div>
       </nav>
 
+      <main>
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
         <span className="inline-block bg-indigo-50 text-indigo-600 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
@@ -170,6 +171,7 @@ export default function SaasLanding() {
           Start Free Trial
         </button>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="border-t border-gray-100 py-8">
