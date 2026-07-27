@@ -8,12 +8,13 @@ export default function LandingCard({ title, description, path, gradient }) {
     >
       {/* Live preview */}
       <div className="relative h-56 overflow-hidden bg-gray-900 pointer-events-none" aria-hidden="true">
-        <iframe
-          src={path}
-          title={title}
-          className="absolute top-0 left-0 origin-top-left w-[1440px] h-[900px] scale-[0.28]"
-          tabIndex={-1}
-        />
+      <iframe
+  src={path}
+  title={title}
+  loading="lazy"
+  className="absolute top-0 left-0 origin-top-left w-[1440px] h-[900px] scale-[0.28]"
+  tabIndex={-1}
+/>
       </div>
 
       {/* Overlay */}
