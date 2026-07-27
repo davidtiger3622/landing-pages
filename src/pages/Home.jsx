@@ -45,8 +45,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="mt-4 text-lg text-slate-300 max-w-xl mx-auto">
-            A gallery of five distinct landing page styles — different industries,
-            different design languages, all built from scratch.
+            landing page samples.
           </p>
         </div>
 

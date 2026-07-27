@@ -70,7 +70,7 @@ export default function CreatorLanding() {
         </div>
 
         <p className="text-center text-xs text-gray-500 mt-10">
-          Built as a portfolio demo · not a real profile
+        © 2026 @juliahearts
         </p>
       </div>
     </div>

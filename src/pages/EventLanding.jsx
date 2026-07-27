@@ -133,7 +133,7 @@ export default function EventLanding() {
       </section>
 
       <footer className="py-8 text-center text-sm text-slate-500">
-        © 2026 Forward Summit. Built as a portfolio demo.
+        © 2026 Forward Summit.
       </footer>
     </div>
   )

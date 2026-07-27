@@ -102,7 +102,7 @@ export default function AgencyLanding() {
       </section>
 
       <footer className="border-t border-white/10 py-8 text-center text-sm text-white/40">
-        © 2026 Studio/9. Built as a portfolio demo.
+        © 2026 Studio/9.
       </footer>
     </div>
   )
