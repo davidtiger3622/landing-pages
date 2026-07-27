@@ -5,6 +5,7 @@ import BusinessLanding from './pages/BusinessLanding'
 import CreatorLanding from './pages/CreatorLanding'
 import EventLanding from './pages/EventLanding'
 import AgencyLanding from './pages/AgencyLanding'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/creator" element={<CreatorLanding />} />
         <Route path="/event" element={<EventLanding />} />
         <Route path="/agency" element={<AgencyLanding />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )
