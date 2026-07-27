@@ -26,13 +26,13 @@ const agenda = [
 ]
 
 export default function EventLanding() {
-  const targetDate = new Date(Date.now() + 1000 * 60 * 60 * 24 * 12) // 12 days out
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft(targetDate))
+  const [targetDate] = useState(() => new Date(Date.now() + 1000 * 60 * 60 * 24 * 12)) // 12 days out
+  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(targetDate))
 
   useEffect(() => {
     const timer = setInterval(() => setTimeLeft(getTimeLeft(targetDate)), 1000)
     return () => clearInterval(timer)
-  }, [])
+  }, [targetDate])
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-950 via-slate-950 to-black text-white">
